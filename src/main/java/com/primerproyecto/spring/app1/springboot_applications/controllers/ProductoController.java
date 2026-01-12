@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.primerproyecto.spring.app1.springboot_applications.model.Producto;
+import com.primerproyecto.spring.app1.springboot_applications.models.Producto;
 
 @RestController
 @RequestMapping("/api")

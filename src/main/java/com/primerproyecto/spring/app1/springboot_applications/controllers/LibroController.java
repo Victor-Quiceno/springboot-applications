@@ -3,7 +3,7 @@ package com.primerproyecto.spring.app1.springboot_applications.controllers;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.primerproyecto.spring.app1.springboot_applications.model.Libro;
+import com.primerproyecto.spring.app1.springboot_applications.models.Libro;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.primerproyecto.spring.app1.springboot_applications.model;
+package com.primerproyecto.spring.app1.springboot_applications.models;
 
 public class Producto {
 
