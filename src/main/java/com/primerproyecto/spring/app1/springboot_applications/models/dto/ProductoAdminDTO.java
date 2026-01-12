@@ -1,24 +1,24 @@
-package com.primerproyecto.spring.app1.springboot_applications.models;
+package com.primerproyecto.spring.app1.springboot_applications.models.dto;
 
-public class Producto {
+public class ProductoAdminDTO {
 
     private Long id;
     private String nombre, categoria;
-    private double precioCosto;// Este solo es para Admins
-    private double precioPublico; // Este es para todos los usuarios
-    private int stockReal; // Este solo es para Admins
-    private boolean disponible; // Para todos
+    private double precioCosto, precioPublico, margenGanancia;
+    private int stockReal;
+    private boolean disponible;
 
-    public Producto() {
+    public ProductoAdminDTO() {
     }
 
-    public Producto(Long id, String nombre, String categoria, double precioCosto, double precioPublico, int stockReal,
-            boolean disponible) {
+    public ProductoAdminDTO(Long id, String nombre, String categoria, double precioCosto, double precioPublico,
+            double margenGanancia, int stockReal, boolean disponible) {
         this.id = id;
         this.nombre = nombre;
         this.categoria = categoria;
         this.precioCosto = precioCosto;
         this.precioPublico = precioPublico;
+        this.margenGanancia = margenGanancia;
         this.stockReal = stockReal;
         this.disponible = disponible;
     }
@@ -63,6 +63,14 @@ public class Producto {
         this.precioPublico = precioPublico;
     }
 
+    public double getMargenGanancia() {
+        return margenGanancia;
+    }
+
+    public void setMargenGanancia(double margenGanancia) {
+        this.margenGanancia = margenGanancia;
+    }
+
     public int getStockReal() {
         return stockReal;
     }
@@ -79,5 +87,4 @@ public class Producto {
         this.disponible = disponible;
     }
 
-    
 }
